@@ -37,6 +37,7 @@ otherwise attempt to use a remote computer and import them and render them there
 and send them back.
 
 
-### Irrelvant info
+
 turn table 
 rod diameter 5-7mm
+platform diameter 260mm
