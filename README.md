@@ -16,7 +16,7 @@
 ### Program Basic Functionality
 - [ ] Program Arduino to take photos or Raspberry Pi
 - [ ] Program Arduino to turn stepper motor.
-- [ ] Program Arduino and Raspberry Pi to talk to eachother
+- [x] Program Arduino and Raspberry Pi to talk to eachother
 - [ ] Program Led Screen to have a start button
 - [ ] Joystick For either navigation or starting.
 
@@ -38,6 +38,7 @@ and send them back.
 
 
 
-turn table 
-rod diameter 5-7mm
-platform diameter 260mm
+development notes
+raspberry pi usb connection
+- acm0
+-
