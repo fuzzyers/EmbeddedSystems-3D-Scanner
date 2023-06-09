@@ -43,7 +43,9 @@ void setup() {
 }
 
 void loop() {
-  motor();
+  if (received == 1){
+    motor();
+  }
   delay(100);
 }
 
