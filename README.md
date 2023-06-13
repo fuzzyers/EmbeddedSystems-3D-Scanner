@@ -4,9 +4,9 @@
 ## Plan
 
 ### Equipment
-- [ ] Need Camera Module Either Raspberry Pi or Arduino (Raspberry Pi)
+- [x] Need Camera Module Either Raspberry Pi or Arduino (Raspberry Pi) *ordered
 - [x] External Power for Stepper Motor
-- [ ] Need Bigger Stepper Motor
+- [x] Need Bigger Stepper Motor (defunct) *using small and light turntable
 
 ### Model
 - [x] Build Model to house camera
@@ -24,6 +24,7 @@
 
 ### Program Advanced
 - [ ] Program arduino to turn when the pi says so
+- [ ] Run Python Script on button press
 
 ### Manual testing
 - [ ] Test Adding Photos into Regard3d
