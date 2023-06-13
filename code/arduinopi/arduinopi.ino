@@ -7,13 +7,12 @@
  * @lastedit: 09/06/2023
  */
 
- //Wire library handles the i2c communication for the arduino
-//#include <Wire.h>
+Wire library handles the i2c communication for the arduino
+#include <Wire.h>
 #include <Stepper.h>
 
 const int stepsPerRevolution = 200;
 const int motorSpeed = 60;
-const int delayPerStep = (30* 1000) / (stepsPerRevolution * 2);
 int received = 1;
 
 /*
@@ -54,21 +53,21 @@ void loop() {
  * save what is read over wire into a variable called received and then print out received to 
  * the serial terminal
  */
-// void receiveEvent(int bytes) {
-//   while (Wire.available()) {
-//     received = Wire.read();
-//     Serial.println(received);
-//   }
-// }
+void receiveEvent(int bytes) {
+   while (Wire.available()) {
+     received = Wire.read();
+     Serial.println(received);
+   }
+ }
 
 /*
  * The requestEvent triggers when the raspberry pi wants to recieve
  * data in this case its just returning what has been sent by the pi
  */
-// void requestEvent() {
-//     int valueToSend = received;
-//     Wire.write(valueToSend);
-// }
+void requestEvent() {
+    int valueToSend = received;
+    Wire.write(valueToSend);
+}
 
 void motor() {
   stepper.step(stepsPerRevolution);
