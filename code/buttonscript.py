@@ -30,9 +30,3 @@ GPIO.add_event_detect(button_pin, GPIO.FALLING, callback=run_script, bouncetime=
 
 while True:
     time.sleep(1)
-
-
-GPIO.add_event_detect(button_pin, GPIO.FALLING, callback=run_script, bouncetime=200)
-
-while True:
-    time.sleep(1)
