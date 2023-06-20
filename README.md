@@ -20,6 +20,11 @@ The script can then be run at the end of the capture stage process the images an
 Bring in a more powerful Stepper motor to turn a larger table. <br>
 Aswell as add more stability and remove some of the shaking. This will likely be accomplished by narrowing the support shaft by a few mm
 
+### New Parts
+- [ ] led Screen for Raspberry Pi
+- [ ] Steppermotor and lead Screw Combo
+- [ ] 12v Power Supply
+
 ## Plan for Release V1.0
 
 ### Equipment
