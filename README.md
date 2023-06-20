@@ -12,19 +12,19 @@
 - [x] Build Model to house camera
 - [X] Build Model to house turntable
 - [ ] Optional Led Screen and Joystick 
-- [ ] print
+- [X] print
 - [X] Gears (to geardown)
 
 ### Program Basic Functionality
-- [ ] Program Arduino to take photos or Raspberry Pi
+- [X] Program ~~Arduino~~ to take photos or Raspberry Pi
 - [X] Program Arduino to turn stepper motor.
 - [x] Program Arduino and Raspberry Pi to talk to eachother
 - [ ] Program Led Screen to have a start button
 - [ ] Joystick For either navigation or starting (optional).
 
 ### Program Advanced
-- [ ] Program arduino to turn when the pi says so
-- [ ] Run Python Script on button press
+- [X] Program arduino to turn when the pi says so
+- [X] Run Python Script on button press
 
 ### Manual testing
 - [ ] Test Adding Photos into Regard3d
