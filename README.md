@@ -19,7 +19,7 @@
 - [X] Program ~~Arduino~~ to take photos or Raspberry Pi
 - [X] Program Arduino to turn the stepper motor.
 - [x] Program Arduino and Raspberry Pi to talk to each other
-- [ ] Program Led Screen to have a start button
+- [X] Program ~~Led Screen~~ to have a start button
 - [ ] Joystick For either navigation or starting (optional).
 
 ### Program Advanced
