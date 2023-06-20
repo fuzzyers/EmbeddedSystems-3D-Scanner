@@ -13,38 +13,37 @@
 - [X] Build Model to house turntable
 - [ ] Optional Led Screen and Joystick 
 - [X] print
-- [X] Gears (to geardown)
+- [X] Gears (to gear down)
 
 ### Program Basic Functionality
 - [X] Program ~~Arduino~~ to take photos or Raspberry Pi
-- [X] Program Arduino to turn stepper motor.
-- [x] Program Arduino and Raspberry Pi to talk to eachother
+- [X] Program Arduino to turn the stepper motor.
+- [x] Program Arduino and Raspberry Pi to talk to each other
 - [ ] Program Led Screen to have a start button
 - [ ] Joystick For either navigation or starting (optional).
 
 ### Program Advanced
-- [X] Program arduino to turn when the pi says so
-- [X] Run Python Script on button press
+- [X] Program Arduino to turn when the pi says so
+- [X] Run Python Script on the button press
 
 ### Manual testing
 - [ ] Test Adding Photos into Regard3d
 - [ ] Tweak Settings
 
-### Image Testing (Defunct going to use Raspberyy Pi for Imaging)
-- [ ] Work on sending photos to raspberrypi if on arduino
+### Image Testing (Defunct going to use Raspberry Pi for Imaging)
+- [ ] Work on sending photos to raspberry pi if on Arduino
 
 ### Raspberry Pi advanced testing
-- [ ] Try To render model on raspberry pi 
-- [ ] if succesful in reasonable time
+- [ ] Try To render the model on raspberry pi 
+- [ ] if successful in a reasonable time
 - [ ] work on getting them to import and render from the led screen
 
 ### Alternative Method
-otherwise attempt to use a remote computer and import them and render them there
+otherwise, attempt to use a remote computer and import them and render them there
 and send them back.
 
 
 
 development notes
-raspberry pi usb connection
+raspberry pi USB connection
 - acm0
--
