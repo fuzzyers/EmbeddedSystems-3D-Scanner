@@ -1,0 +1,14 @@
+[Unit]
+Description=button
+After=multi-user.target
+
+[Service]
+ExecStart=/usr/bin/python /home/pi/Desktop/EmbeddedSystems-3D-Scanner/code/buttonscript.py
+WorkingDirectory=/home/pi/Desktop/EmbeddedSystems-3D-Scanner/code
+StandardOutput=inherit
+StandardError=inherit
+Restart=always
+User=pi
+
+[Install]
+WantedBy=multi-user.target
