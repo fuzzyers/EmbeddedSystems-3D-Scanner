@@ -1,7 +1,23 @@
 # EmbeddedSystems-3D-Scanner
 3D Scanner Project for Image Modeling
 
-## Plan
+
+## Plan for Next Release V2.0
+
+In this next wave of releases I want to create an installer script the use of this will be to setup the daemon manually for the user.
+I want to update the model
+- First thing will be putting the camera mount onto some sort of rail allowing it to move back and forth to get the ideal focus and control. <br>
+This will be acheived likely with a stepper motor and a lead screw along with some stabliser rails <br>
+Alternativly we could use a linear rails for it to slide on. <br>
+We would then have the controls for this setup to a led screen that is playing the camera preview so the user can see how this focus is looking. <br>
+- Adding a servo Motor for controlling the camera angle will also be useful this will require tweaking in the design as well as a script for moving it up and down. <br>
+This will also require a camera preview on an led screen.
+- A more tidy housing for the cables and pcbs.
+
+A script that can handle feeding images straight into some photogrammetry software e.g colsmap
+The script can then be run at the end of the capture stage process the images and then spitout a recreation of the mesh to an led screen.
+
+## Plan for Release V1.0
 
 ### Equipment
 - [x] Need Camera Module Either Raspberry Pi or Arduino (Raspberry Pi) *ordered
