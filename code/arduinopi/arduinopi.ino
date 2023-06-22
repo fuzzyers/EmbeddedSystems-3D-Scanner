@@ -13,7 +13,8 @@ Wire library handles the i2c communication for the arduino
 
 const int stepsPerRevolution = 200;
 const int motorSpeed = 60;
-int received = 1;
+int received = 0;
+int revolutionCounter = 0;
 
 /*
  * We have created a new instance of Stepper with the name of stepper
@@ -34,9 +35,9 @@ Stepper stepper(stepsPerRevolution, 8, 9, 10, 11);
  * stepper gets ret to a speed of 60 (motorspeed) rpm
  */
 void setup() {
-  //Wire.begin(0x12);
-  //Wire.onRequest(requestEvent);
-  //Wire.onReceive(receiveEvent);
+  Wire.begin(0x12);
+  Wire.onRequest(requestEvent);
+  Wire.onReceive(receiveEvent);
   Serial.begin(9600);
   stepper.setSpeed(motorSpeed);
 }
@@ -45,7 +46,6 @@ void loop() {
   if (received == 1){
     motor();
   }
-  delay(100);
 }
 
 /*
@@ -65,12 +65,20 @@ void receiveEvent(int bytes) {
  * data in this case its just returning what has been sent by the pi
  */
 void requestEvent() {
-    int valueToSend = received;
-    Wire.write(valueToSend);
+  int valueToSend = 0;
+
+  // Increment revolution counter
+  revolutionCounter++;
+
+  // Set value to send to 1 every 3 revolutions
+  if (revolutionCounter % 1 == 0) {
+    valueToSend = 1;
+  }
+
+  Wire.write(valueToSend);
 }
 
 void motor() {
   stepper.step(stepsPerRevolution);
-
-  Serial.println("test");
+  received = 0;
 }
